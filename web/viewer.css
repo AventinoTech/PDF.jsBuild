@@ -1249,15 +1249,6 @@ html[dir="rtl"] #outerContainer.sidebarOpen #loadingBar {
   transition: width 200ms;
 }
 
-@-webkit-keyframes progressIndeterminate {
-  0% {
-    left: -142px;
-  }
-  100% {
-    left: 0;
-  }
-}
-
 @keyframes progressIndeterminate {
   0% {
     left: -142px;
@@ -1287,8 +1278,7 @@ html[dir="rtl"] #outerContainer.sidebarOpen #loadingBar {
     var(--progressBar-color) 95px,
     var(--progressBar-indeterminate-blend-color) 100px
   );
-  -webkit-animation: progressIndeterminate 1s linear infinite;
-          animation: progressIndeterminate 1s linear infinite;
+  animation: progressIndeterminate 1s linear infinite;
 }
 
 .findbar,
@@ -2569,7 +2559,6 @@ html[dir="rtl"] #documentPropertiesOverlay .row > * {
 
 .grab-to-pan-grab {
   cursor: url("images/grab.cur"), move !important;
-  cursor: -webkit-grab !important;
   cursor: grab !important;
 }
 .grab-to-pan-grab
@@ -2579,7 +2568,6 @@ html[dir="rtl"] #documentPropertiesOverlay .row > * {
 .grab-to-pan-grab:active,
 .grab-to-pan-grabbing {
   cursor: url("images/grabbing.cur"), move !important;
-  cursor: -webkit-grabbing !important;
   cursor: grabbing !important;
   position: fixed;
   background: rgba(0, 0, 0, 0);
